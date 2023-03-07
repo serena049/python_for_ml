@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/zouserena/Library/CloudStorage/OneDrive-TheBostonConsultingGroup,Inc/00 L&D/03 Self-learning/03 cousera/python_for_ml/.env/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from notebook.bundler.bundlerextensions import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
